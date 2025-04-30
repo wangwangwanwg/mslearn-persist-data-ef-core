@@ -9,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSqlite<PizzaContext>("Data Source=ContosoPizza.db");
-
+builder.Services.AddSqlite<PromotionsContext>("Data Source=Promotions/Promotions.db");
 // Add the PromotionsContext
 
 builder.Services.AddScoped<PizzaService>();
